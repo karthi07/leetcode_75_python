@@ -12,3 +12,5 @@
   - loop over array, maintain pointer for zeros. for each non-zero, swap the array and increment the zeroPtr
 2. Is SubSequence
   - loop over main string, maintain pointer for matching chars, if s[ptr] == t[i] => ptr += 1, return true if ptr == len(s)
+3. Container water distance
+  - left and right index of array, calc current area and maintain gobal area max for each step. and update the idx based on max left and righ value
