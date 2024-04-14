@@ -14,3 +14,11 @@
   - loop over main string, maintain pointer for matching chars, if s[ptr] == t[i] => ptr += 1, return true if ptr == len(s)
 3. Container water distance
   - left and right index of array, calc current area and maintain gobal area max for each step. and update the idx based on max left and righ value
+
+## BT - DFS
+
+1. find max depth of the Tree
+  - recursive -> return 1 + max(self.maxDepth(left), self.maxDepth(right))
+  - iter -> use stack to store node and depth, find max(depth) and add child to stack
+2. check leaf similarity of two tree
+  - calc leaf using dfs find_leaf(node, leaf) -> if not node.left and not node.right -> leaf.append(node.val) find_leaf(node.left, leaf) find_leaf(node.right, leaf)
