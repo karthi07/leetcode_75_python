@@ -22,3 +22,5 @@
   - iter -> use stack to store node and depth, find max(depth) and add child to stack
 2. check leaf similarity of two tree
   - calc leaf using dfs find_leaf(node, leaf) -> if not node.left and not node.right -> leaf.append(node.val) find_leaf(node.left, leaf) find_leaf(node.right, leaf)
+3. good nodes
+  - use dfs with recursive and keep track of maxValue. return the good nodes
