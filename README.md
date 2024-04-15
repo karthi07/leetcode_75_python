@@ -29,3 +29,5 @@
 
 1. right side view of tree
   - use queue with node and level, and maintain previous_level. while traversing if not level != previous_level and add to res, add right to queue before left
+2. max level sum
+  - with queue, maintain maxsum, res, inside while queue: loop through all element [which is the current level]. calc maxSum and currSum
