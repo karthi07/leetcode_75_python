@@ -24,3 +24,8 @@
   - calc leaf using dfs find_leaf(node, leaf) -> if not node.left and not node.right -> leaf.append(node.val) find_leaf(node.left, leaf) find_leaf(node.right, leaf)
 3. good nodes
   - use dfs with recursive and keep track of maxValue. return the good nodes
+
+## BT - BFS
+
+1. right side view of tree
+  - use queue with node and level, and maintain previous_level. while traversing if not level != previous_level and add to res, add right to queue before left
